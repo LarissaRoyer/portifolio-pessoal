@@ -1,0 +1,203 @@
+body {
+    margin: 0; /* Remove as margens padrão da página */
+    font-family: 'Poppins', sans-serif; /* Define a fonte principal do site */
+    background: #f8f9fa;  /* fundo suave */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Cabeçalho */
+header {
+    width: 100%; /* Faz o cabeçalho ocupar toda a largura da página */
+    background: linear-gradient(90deg, #00b4d8, #48cae4); /* Fundo azul */
+    padding: 20px 0; /* Espaçamento */
+    color: rgb(0, 0, 0); /* Define a cor do texto dentro do header */
+    text-align: center; /* Centraliza */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Leve sombra abaixo do cabeçalho */
+}
+
+header h1 {
+    margin: 0; /* Remove margens do título */
+    font-size: 28px; /* Define o tamanho da fonte do título */
+    font-weight: 700; /* Define o peso da fonte como negrito */
+}
+
+/* Menu */
+.menu {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0;
+    margin-top: 10px;
+    display: flex;  /* Deixa os itens do menu lado a lado */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    gap: 20px; /* Define espaço entre os itens */
+}
+
+.menu li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor inicial dos links como branca */
+    font-weight: 500; /* Deixa os links um pouco mais destacados */
+    transition: color 0.3s; /* Adiciona transição suave ao trocar de cor */
+}
+
+.menu li a:hover {
+    color: #000000; /* Muda a cor do link para preto quando o mouse passa em cima */
+}
+
+/*Imagens das páginas*/
+.imagem-perfil{
+    width: 195px;
+    height: 195px;
+    margin: 60px;
+    border-radius: 100%; /* Deixa a imagem redonda */
+    border: 1px solid black; /* Borda preta */
+}
+
+.imagem-perfil2{ /* Imagem quadrada com leve arredondamento nas bordas*/
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.imagem-perfil3{ /* Imagem quadrada com leve arredondamento nas bordas*/
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.imagem-lateral{ /* Imagem quadrada com leve arredondamento nas bordas*/
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Títulos */
+.titulo { /* Título centralizado com cor azul*/
+    text-align: center;
+    font-size: 24px;
+    color: #0077b6;
+    margin-top: 20px;
+}
+    
+.center{
+    text-align: center; /* Centraliza */
+}
+
+.textocentral{
+    text-align: center;
+    margin: 10px auto; /* Centraliza com margem maior */
+    max-width: 800px;  /* Limita largura para não ficar muito esticado */
+    line-height: 1.6;  /* Espaçamento entre linhas */
+}
+
+.paragrafo {
+    text-align: left;  /* Centraliza o texto para a esquerda */
+    margin: 20px auto;
+    max-width: 600px;  /* Controla largura */
+    line-height: 1.5;  /* Espaçamento entre linhas */
+    padding: 0;  
+}
+
+.sobre-container {
+    display: flex;  /* coloca lado a lado */
+    align-items: flex-start;  /* alinha verticalmente no meio */
+    justify-content: center;  /* centraliza o conjunto */
+    gap: 50px;                /* espaço entre texto e imagem */
+    margin: 40px auto;
+    max-width: 1000px;  /* limita largura pra não esticar muito */
+}
+
+.sobre-texto{ /* Esse bloco vai ocupar o dobro de espaço */
+    flex: 2;
+}
+
+.sobre-imagem{ /* Esse bloco vai ocupar metade do espaço do anterior */
+    flex: 1;
+}
+
+.sites{
+    display: flex;  /* coloca os itens em linha */
+    justify-content: center;  /* centraliza horizontalmente */
+    gap: 20px;  /* espaço entre os botões */
+    list-style: none;  /* remove marcadores da lista */
+    padding: 0;
+    margin: 40px 0;  /* espaço acima e abaixo */
+}
+
+.sites li a {
+    text-decoration: none;  /* remove sublinhado */
+    background-color: #0077b6;  /* cor do botão */
+    color: white;  /* cor do texto */
+    padding: 12px 24px; /* tamanho do botão */
+    border-radius: 8px; /* cantos arredondados */
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;  /* Define uma transição suave para duas propriedades */
+}
+
+.sites li a:hover {
+    background-color: #0096c7; /* cor ao passar o mouse */
+    transform: scale(1.05);    /* efeito de leve aumento */
+}
+
+/* Formulário de contato */
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /*Coloca os elementos em coluna */
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;   /* limita largura do formulário */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transição suave na cor da borda ao focar */
+}
+
+form input:focus,form textarea:focus {
+    border-color: #0077b6; /* Cor azul na borda quando o campo está em foco */
+    outline: none; /* Remove a borda padrão do navegador */
+
+}
+
+form button {
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    font-weight: 500;
+    border: none; /* Remove borda padrão */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves para mudança de cor e efeito de transformação */
+}
+
+form button:hover {
+    background-color: #0096c7; /* Azul mais claro ao passar o mouse */
+    transform: scale(1.05); /* Efeito de "crescimento" leve ao passar o mouse */
+}
+
+.rodape{
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    background: linear-gradient(90deg, #3c84ff, #65adff); /* Fundo em degradê azul da esquerda para a direita */
+    padding: 20px 0; /* Espaçamento interno em cima e embaixo (20px) e nas laterais (0) */
+    text-align: center; /* Centraliza o conteúdo dentro do rodapé */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adiciona sombra sutil abaixo do rodapé */
+}
